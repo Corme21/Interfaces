@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Formulario de rexistro">
+    <meta name="keywords" content="rexistro alumno instituto">
+    <meta name="author" content="Jesus Antonio Allo Castro">
+    <title>Formulario de rexistro</title>
+</head>
+<body>
+    <form>
+        <p>Nombre completo: <input type="text" name="nombre"></p>
+        <p>Correo electronico: <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></p>
+        <p>Contraseña: <input type="password" name="ontraseña"></p>
+        <input type="radio" id="hombre" name="hombre" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="mujer" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+        <select name="asignaturas" id="asignaturas">
+            <option selected value="Elija_la_asignatura">Elija la asignatura</option>
+            <option value="DIW">DIW</option>
+            <option value="DAW">DAW</option>
+            <option value="EIE">EIE</option>
+            <option value="DEWS">DEWS</option>
+            <option value="DWCC">DWCC</option>
+          </select><br><br>
+          <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
