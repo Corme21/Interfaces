@@ -10,6 +10,10 @@
     <title>Formulario de rexistro</title>
 </head>
 <body>
+    <figure>
+        <img src="../Imagenes/chicos_universidad.jpg" alt="Alumnos en grupo"/>
+        <figcaption>Alumnos en grupo</figcaption>
+      </figure>      
     <form>
         <p>Nombre completo: <input type="text" name="nombre"></p>
         <p>Correo electronico: <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></p>
@@ -27,6 +31,26 @@
             <option value="DWCC">DWCC</option>
         </select><br><br>
       <input type="submit" value="Enviar">
+
+      
+
+      <audio src="../Audios/CancionMPEG.m4a" autoplay>
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+
+      <audio src="../Audios/CancionMIDI.midi" autoplay>
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+      
     </form>
+    <footer>
+        <h2>Alumnos en grupo</h2>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="../Imagenes/chicos_universidad.jpg">
+            <source media="(min-width: 768px)" srcset="../Imagenes/chicos_universidad.jpg">
+
+            <img src="../Imagenes/chicos_universidad.jpg" alt="Alumnos en grupo">
+        </picture>
+    </footer>
 </body>
 </html>
