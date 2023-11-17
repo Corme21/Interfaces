@@ -13,10 +13,10 @@
     <form>
         <p>Nombre completo: <input type="text" name="nombre"></p>
         <p>Correo electronico: <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></p>
-        <p>Contraseña: <input type="password" name="contraseña"></p>
-        <innput type="radio" id="hombre" name="xenero" value="hombre">
+        <p>Contraseña: <input type="password" name="contraseña" pattern=".{8,}" required></p>
+        <input type="radio" id="hombre" name="xenero" value="hombre" required>
         <label for="hombre">Hombre</label>
-        <input type="radio" id="mujer" name="xenero" value="mujer">
+        <input type="radio" id="mujer" name="xenero" value="mujer" required>
         <label for="mujer">Mujer</label><br><br>
         <select name="asignaturas" id="asigaturas">
             <option selected value="Elija_la_asignatura">Elija la asignatura</option>
