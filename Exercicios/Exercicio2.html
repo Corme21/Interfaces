@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     <meta name="keywords" content="rexistro alumno instituto">
     <meta name="author" content="Jesus Antonio Allo Castro">
     <title>Formulario de rexistro</title>
-</head>
-<body>
+  </head>
+  <body>
     <figure>
         <img src="../Imagenes/chicos_universidad.jpg" alt="Alumnos en grupo"/>
         <figcaption>Alumnos en grupo</figcaption>
@@ -32,20 +32,29 @@
         </select><br><br>
       <input type="submit" value="Enviar"><br><br>
 
-      <video src="../Videos/videoMP4.mp4" autoplay muted>
-        Tu navegador no admite el elemento <code>video</code>.
-      </video>
-      <video src="../Videos/videoWEBM.webm" autoplay muted>
+      <h2>Video</h2>
+      <video autoplay muted>
+        <source src="../Videos/videoMP4.mp4" type="video/mp4">
+        <source src="../Videos/videoWEBM.webm" type="video/webm">
         Tu navegador no admite el elemento <code>video</code>.
       </video><br><br>
 
-      <audio src="../Audios/CancionMPEG.m4a" controls>
-        Your browser does not support the <code>audio</code> element.
-      </audio>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="../Audios/CancionMPEG.m4a" type="audio/mpeg">
+        <source src="../Audios/CancionMIDI.midi" type="audio/midi">
+        Tu navegador no admite el elemento <code>video</code>.
+      </audio><br><br>
 
-      <audio src="../Audios/CancionMIDI.midi" controls>
-        Your browser does not support the <code>audio</code> element.
-      </audio>
+      <h2>Lista del proceso</h2>
+      <ol>
+        <li>Usé el elemento "<strong><em>figure</em></strong>" para para introducir una imagen y un titulo que tuviera sentido con el tema de la pagina.</li>
+        <li>Creé un footer, despues, dentro de este usé el elemento "<strong><em>picture</em></strong>" para introducir varias imagenes que cambiaran dependiendo del tamaño de la ventana del navegador.</li>
+        <li>Entre el footer y el formulario, usé el elemento <strong><em>video</em></strong> para insertar un video del instituto con distintos formatos que se inician solo.</li>
+        <li>Despues del video, usé el elemento "<strong><em>audio</em></strong>" para insertar un audio de musica en distintos formatos, el cual le puse los controles para poder pararlo e iniciarlo.</li>
+        <li>Por ultimo, hice esta lista ordenada con el elemento "<strong><em>ol</em></strong>".</li>
+      </ol>
+
       
     </form>
     <footer>
@@ -53,9 +62,8 @@
         <picture>
             <source media="(min-width: 1200px)" srcset="../Imagenes/clase.jpg">
             <source media="(min-width: 768px)" srcset="../Imagenes/universidades.jpg">
-
             <img src="../Imagenes/chicos_universidad.jpg" alt="Alumnos en grupo">
         </picture>
     </footer>
-</body>
+  </body>
 </html>
