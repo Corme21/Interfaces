@@ -1,0 +1,6 @@
+.cuadroNav{border: 3px solid dodgerblue; background-color:dodgerblue;}
+ul li{display: inline;}
+li a{display: inline; color: white; padding: 14px 16px; text-decoration: none;}
+.seccion1{float: left; text-align: center; left: 30px; width: 500px;}
+.seccion2{float:right; text-align: center; right: 30px; width: 500px;}
+.pie{float: inline-end; text-align: center; bottom: 30px;}

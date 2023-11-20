@@ -1,0 +1,9 @@
+table tr th.dias {background-color: salmon;}
+table tr td.horas {background-color:lightsalmon;}
+table tr td.libre {background-color: darkgrey;}
+table tr td {text-align: center;}
+table tr td.cliente {background-color:palegreen;}
+table tr td.servidor {background-color: peru;}
+table tr td.deseño {background-color: aqua;}
+table tr td.despregar {background-color:orange;}
+table tr td.empresa {background-color: palevioletred;}
