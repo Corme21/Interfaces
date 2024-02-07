@@ -1,0 +1,59 @@
+div.responsive {
+    padding:  10px;
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  transition: 0.5s;
+}
+img.zoom-in:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+img.rotate:hover {
+  -webkit-transform: scale(2) rotate(25deg);
+  transform: scale(2) rotate(25deg);
+}
+img.zoom-out:hover {
+  transform: scale(0.9);
+}
+img.blur:hover {
+  filter: blur(10px);
+}
+img.brightness:hover {
+  filter: brightness(200%);
+}
+img.contrast:hover {
+  filter: contrast(200%);
+}
+img.drop-shadow:hover {
+  filter: drop-shadow(4px 4px 4px #555);
+}
+img.grayscale:hover {
+  filter: grayscale(200%);
+}
+img.hue-rotate:hover {
+  filter: hue-rotate(90deg);
+}
+img.invert:hover {
+  filter: invert(200%);
+}
+img.opacity:hover {
+  filter: opacity(75%);
+}
+img.saturate:hover {
+  filter: saturate(200%);
+}
+img.sepia:hover {
+  filter: sepia(200%);
+}
