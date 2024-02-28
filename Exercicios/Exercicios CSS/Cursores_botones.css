@@ -1,0 +1,12 @@
+.padre{color:green}
+body p.grande{font-size: 6em; all: unset;}
+
+.articulo {color: initial; background-color: blue;}
+
+details{cursor: help;}
+
+a{cursor: alias;}
+
+.not{cursor: not-allowed;}
+.baloncesto{cursor: url(imagen/pelota.gif), auto;}
+.visual{cursor: crosshair;}
