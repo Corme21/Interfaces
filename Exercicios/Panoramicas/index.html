@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Panoramica</title>
+</head>
+<body>
+    <div id="viewer"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.module.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import { Viewer } from '@photo-sphere-viewer/core';
+    
+        const viewer = new Viewer({
+            container: document.querySelector('#viewer'),
+            panorama: 'Imagen/corme.jpg',
+            caption: 'Corme Porto &ensp; <strong>Jesús Antonio Allo Castro</strong>',
+            touchmoveTwoFingers: true,
+            mousewheelCtrlKey: true,
+        });
+    </script>
+</body>
+</html>
