@@ -7,9 +7,9 @@
     <title>Lectura de metadatos</title>
 </head>
 <body>
-    <img src="imagenes/Castro.JPG" alt="Castro" height="500" width="800">
+    <img src="Imagenes/Castro.JPG" alt="Castro" height="500" width="800">
     <?php
-        $exif = exif_read_data('imagenes/Castro.JPG', 0, true);
+        $exif = exif_read_data('Imagenes/Castro.JPG', 0, true);
         echo "prueba2.jpg:<br />\n";
         foreach ($exif as $clave => $sección) {
             foreach ($sección as $nombre => $valor) {
@@ -19,9 +19,9 @@
     ?>
     <br>
 
-    <img src="imagenes/Comida.jpg" alt="Comida" height="500" width="800">
+    <img src="Imagenes/Comida.jpg" alt="Comida" height="500" width="800">
     <?php
-        $exif = exif_read_data('imagenes/Comida.jpg', 0, true);
+        $exif = exif_read_data('Imagenes/Comida.jpg', 0, true);
         echo "prueba2.jpg:<br />\n";
         foreach ($exif as $clave => $sección) {
             foreach ($sección as $nombre => $valor) {
@@ -31,9 +31,9 @@
     ?>
     <br>
 
-    <img src="imagenes/Concerto.jpg" alt="Concerto" height="500" width="800">
+    <img src="Imagenes/Concerto.jpg" alt="Concerto" height="500" width="800">
     <?php
-        $exif = exif_read_data('imagenes/Concerto.jpg', 0, true);
+        $exif = exif_read_data('Imagenes/Concerto.jpg', 0, true);
         echo "prueba2.jpg:<br />\n";
         foreach ($exif as $clave => $sección) {
             foreach ($sección as $nombre => $valor) {
@@ -43,9 +43,9 @@
     ?>
     <br>
 
-    <img src="imagenes/LaCoru.jpg" alt="LaCoru" height="500" width="800">
+    <img src="Imagenes/LaCoru.jpg" alt="LaCoru" height="500" width="800">
     <?php
-        $exif = exif_read_data('imagenes/LaCoru.jpg', 0, true);
+        $exif = exif_read_data('Imagenes/LaCoru.jpg', 0, true);
         echo "prueba2.jpg:<br />\n";
         foreach ($exif as $clave => $sección) {
             foreach ($sección as $nombre => $valor) {
@@ -55,9 +55,9 @@
     ?>
     <br>
 
-    <img src="imagenes/Rosa.JPG" alt="Rosa" height="500" width="800">
+    <img src="Imagenes/Rosa.JPG" alt="Rosa" height="500" width="800">
     <?php
-        $exif = exif_read_data('imagenes/Rosa.JPG', 0, true);
+        $exif = exif_read_data('Imagenes/Rosa.JPG', 0, true);
         echo "prueba2.jpg:<br />\n";
         foreach ($exif as $clave => $sección) {
             foreach ($sección as $nombre => $valor) {
