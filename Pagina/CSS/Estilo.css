@@ -84,7 +84,7 @@
 }
 
 nav {
-    background: #3563E9;
+    background: #2126FE;
 }
 
 img.logo {
@@ -118,7 +118,16 @@ li a:hover {
 }
 
 footer{
-    background: #7A4BE7;
+    background: #551DD7;
+}
+
+footer li a:hover {
+    background-color: #8956ff;
 }
 
 fieldset{text-align: center; margin-left: 50em; margin-right: 50em;}
+
+h1{text-align: center;}
+
+h3{text-align: center;}
+
