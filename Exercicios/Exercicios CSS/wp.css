@@ -1420,9 +1420,9 @@
                 color: var(--wp--preset--color--outline) !important;
             }
 
-            .has-neutral-color {
-                /* color: var(--wp--preset--color--neutral) !important; */
-            }
+            /*.has-neutral-color {
+                 color: var(--wp--preset--color--neutral) !important; 
+            }*/
 
             .has-foreground-color {
                 color: var(--wp--preset--color--foreground) !important;
