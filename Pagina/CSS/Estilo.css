@@ -120,3 +120,5 @@ li a:hover {
 footer{
     background: #7A4BE7;
 }
+
+fieldset{text-align: center; margin-left: 50em; margin-right: 50em;}
