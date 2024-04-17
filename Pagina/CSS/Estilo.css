@@ -10,8 +10,6 @@ ul {display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 
 .image_wrapper {position: relative;}
 
-
-
 .overlay {position: absolute; background: rgba(57, 57, 57, 0.5);
   /* center overlay text */
   display: flex; align-items: center; justify-content: center;}
@@ -58,7 +56,7 @@ p {position: relative; font-size: 17px; padding: 0 10px 15px; color: #fff; top: 
         
 .img-container {position: relative; overflow: hidden; margin: 10px;}
           
-.img-hover-item {position: relative; display: block; width: 100%; transform: scale(1.02); transition: 0.25s 0.1s ease-out;}
+.img-hover-item {position: relative; display: block; transform: scale(1.02); transition: 0.25s 0.1s ease-out;}
           
 .img-overlay {position: absolute; background-color: #000; opacity: 0; transition: 0.25s ease-in-out;}
   
@@ -373,14 +371,21 @@ footer li a:hover {
     background-color: #B39EFF;
 }
 
-fieldset{text-align: center;}
+form{text-align: center;}
+address{text-align: center;}
 
 h1{text-align: center;}
 
-h3{text-align: center;}
+h2{text-align: center;}
 
 button.pantalla{color:#FAFAFA; background: #2126FE; border: none;}
 
 button.pantalla:hover{background-color: #8BA6F9; color:#1A1A1A;}
 
 h1.familia{color: #FAFAFA; text-align: center;}
+
+table{align-items: center;}
+
+p.audio{color: #1A1A1A; text-align: center;}
+
+audio{align-items: center;}

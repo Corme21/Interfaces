@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css"/>
-    <script src="../JavaScript/pantalla_completa.js"></script>
-    <title>Inicio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jesús Antonio Allo Castro">
+  <meta name="description" content="Inicio de sesion">
+  <meta name="keywords" content="Inicio">
+  <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css" />
+  <script src="../JavaScript/pantalla_completa.js"></script>
+  <title>Inicio</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <div class="menu">
-        <a href="index.html"><img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="150" width="260"></a>
-        <input type="checkbox" id="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul>
-          <li><a href="#home"><strong>Servicios</strong></a></li>
-          <li><a href="#news"><strong>Tienda</strong></a></li>
-          <li><a href="Contacto.html"><strong>Contacto</strong></a></li>
-          <li><a href="#about"><strong>Nosotros</strong></a></li>
-          <li><button class="pantalla" onclick="openFullscreen()"><strong>Pantalla completa</strong></button></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-    <h1>Fast PC</h1>
-
-    <div class='col-4'>
-        <div class='img-wrapper hov-img-2'>
-          <div class='img-container'>
-            <img src="../Imagenes/foto.JPG" alt="Foto_Familia" width="75%" class="img-hover-item" alt='sample'>
-            <div class='img-overlay'>
-              <h1 class="familia"><strong>Foto de familia da empresa</strong></h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <footer>
-        <ul>
-            <img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="100" width="190">
+  <main>
+    <header>
+      <nav>
+        <div class="menu">
+          <a href="index.html"><img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="150"
+              width="260"></a>
+          <input type="checkbox" id="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul>
             <li><a href="#home"><strong>Servicios</strong></a></li>
             <li><a href="#news"><strong>Tienda</strong></a></li>
-            <li><a href="#contact"><strong>Contacto</strong></a></li>
+            <li><a href="Contacto.html"><strong>Contacto</strong></a></li>
             <li><a href="#about"><strong>Nosotros</strong></a></li>
-        </ul>
-    </footer>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Iniciar Sesión</h1>
+
+    <form action="Nosotros.html">
+      <title>Formulario de experiencia</title>
+      <label for="nombre"><strong>Nombre</strong></label>
+      <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
+      <label for="apellidos"><strong>Apellidos</strong></label>
+      <input type="text" name="apellidos" id="apellidos" placeholder="Doe"><br><br>
+      <label for="correo"><strong>Correo Electronico</strong></label>
+      <input type="email" name="correo" id="correo" placeholder="fulanito@gmail.com"><br><br>
+      <label for="contrasena"><strong>Contraseña</strong></label>
+      <input type="password" name="contrasena" id="contrasena" required><br><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
 </body>
+
 </html>

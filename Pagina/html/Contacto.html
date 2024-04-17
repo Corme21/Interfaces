@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css"/>
+    <meta name="author" content="Jesús Antonio Allo Castro">
+    <meta name="description" content="Formulario de comentario y contcato de empresa">
+    <meta name="keywords" content="Comentario">
+    <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css" />
     <title>Index</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-          <div class="menu">
-            <a href="index.html"><img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="150" width="260"></a>
-            <input type="checkbox" id="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul>
-              <li><a href="#home"><strong>Servicios</strong></a></li>
-              <li><a href="#news"><strong>Tienda</strong></a></li>
-              <li><a href="Contacto.html"><strong>Contacto</strong></a></li>
-              <li><a href="#about"><strong>Nosotros</strong></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+    <main>
+        <header>
+            <nav>
+                <div class="menu">
+                    <a href="index.html"><img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="50"
+                            width="60"></a>
+                    <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li><a href="#home"><strong>Servicios</strong></a></li>
+                        <li><a href="#news"><strong>Tienda</strong></a></li>
+                        <li><a href="Contacto.html"><strong>Contacto</strong></a></li>
+                        <li><a href="#about"><strong>Nosotros</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <h3>Dejanos un comentario</h3>
-
-    <fieldset>
+        <h2>Dejanos un comentario</h2>
         <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre"><br><br>
-            <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos"><br><br>
-            <label for="correo">Correo Electronico</label>
-            <input type="email" name="correo" id="correo"><br><br>
-            <label for="fecha">Nacimiento</label>
-            <input type="date" name="fecha" id="fecha"><br><br>
-            <label for="comentario">Comentario</label>
-            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br><br>
+            <title>Formulario de experiencia</title>
+            <label for="nombre"><strong>Nombre</strong></label>
+            <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
+            <label for="apellidos"><strong>Apellidos</strong></label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Doe"><br><br>
+            <label for="correo"><strong>Correo Electronico</strong></label>
+            <input type="email" name="correo" id="correo" placeholder="fulanito@gmail.com"><br><br>
+            <input type="radio" name="genero" id="Hombre" value="Hombre"><label for="Hombre">Hombre</label>
+            <input type="radio" name="genero" id="Mujer" value="Mujer"><label for="Mujer">Mujer</label>
+            <input type="radio" name="genero" id="Otro" value="otro"><label for="Otro">Otro</label>
+            <label for="comentario"><strong>Comentario</strong></label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"
+                placeholder="Me encanta el lugar"></textarea><br>
             <input type="submit" value="Enviar">
-        </form> 
-    </fieldset>
-    
-    <h3>Contacto</h3>
-    <fieldset>
+        </form>
+
+        
+        <h2>Contacto</h2>
         <address>
             Fast PC
             <br>
@@ -56,17 +64,21 @@
             España
             <br>
             Telefono: +34 123456789
-            Correo electronico: fastPC@gmail.com
+            <br>
+            <strong>Correo electronico: fastPC@gmail.com</strong>
         </address>
-    </fieldset><br><br>
-    <footer>
-        <ul>
-            <img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="100" width="190">
-            <li><a href="#home"><strong>Servicios</strong></a></li>
-            <li><a href="#news"><strong>Tienda</strong></a></li>
-            <li><a href="#contact"><strong>Contacto</strong></a></li>
-            <li><a href="#about"><strong>Nosotros</strong></a></li>
-        </ul>
-    </footer>
+        <br><br>
+        <footer>
+            <ul>
+                <img class="logo" src="../Imagenes/Sin fondo blanco.png" alt="Logo" height="100" width="190">
+                <li><a href="#home"><strong>Servicios</strong></a></li>
+                <li><a href="#news"><strong>Tienda</strong></a></li>
+                <li><a href="#contact"><strong>Contacto</strong></a></li>
+                <li><a href="#about"><strong>Nosotros</strong></a></li>
+            </ul>
+        </footer>
+    </main>
+
 </body>
+
 </html>
