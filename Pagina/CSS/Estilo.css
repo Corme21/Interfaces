@@ -2,7 +2,7 @@
 
 * {box-sizing: border-box;}
 
-body {font-family: system-ui;}
+body {font-family: system-ui; background: #FAFAFA;}
 
 section {margin: 0 auto; max-width: 1300px; padding: 0 10px;}
 
@@ -388,4 +388,11 @@ table{align-items: center;}
 
 p.audio{color: #1A1A1A; text-align: center;}
 
-audio{align-items: center;}
+div.audio{display: flex;
+  justify-content: center;
+  align-items: center;}
+
+div.iframe{display: flex;
+  justify-content: center;
+  align-items: center;}
+
