@@ -218,23 +218,35 @@ p {position: relative; font-size: 17px; padding: 0 10px 15px; color: #FAFAFA; to
 
 header {
     width: 100%;
-    height: 35%;
+    height: 13em;
+    top: 0;
     padding: 10px 5%;
     background: #2126FE;
 }
 
+header img {
+  float: left;
+}
+header nav {
+  float: right;
+}
 
 header nav .menu ul {
     /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
-    width: 100%;
+    width: 98%;
     position: absolute;
-    top: 15%;
+    top: 215px;
     right: 0;
     overflow: hidden;
     list-style: none;
     background: #2126FE;
     height: 0px;
+    transition: height 0.5s ease;
 }
+
+header nav .menu  ul li {
+  position: relative;
+} 
 
 header nav .menu  ul li:hover {
     background: #8BA6F9;
@@ -251,11 +263,16 @@ header nav .menu  ul li a:hover {
     color: #1A1A1A;
 } 
 
+/*animación del menu que se desplega*/
 header nav .menu input[type="checkbox"]:checked ~ ul {
-    height: 240px;
+  height: 240px;
+  transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
 }
 header nav .menu {
-    padding-top: 3px;
+  padding-top: 3px;
 }
 /*checkbox transparente y en primer plano*/
 header nav .menu input {
@@ -276,6 +293,8 @@ header nav .menu span {
     background: #FAFAFA;
     z-index: 1;
     transform-origin: 3px 0px;
+    transition: transform 0.5s ease,
+        opacity 0.55s ease;
 }
 header nav .menu span:first-child {
     transform-origin: 0% 0%;
@@ -328,6 +347,59 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     }
 }
 
+/* Filter */
+.filterDiv {
+  float: left;
+  background-color: #FAFAFA;
+  color: #1A1A1A;
+  width: 21.5em;
+  border: 1px solid #1A1A1A;
+  line-height: 100px;
+  text-align: center;
+  margin: 4em;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #2126FE;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #8BA6F9;
+  color: #1A1A1A;
+}
+
+.btn.active {
+  background-color: #9cb5ff;
+  color: #1A1A1A;
+}
+
+.filterDiv figure{display: flex; align-items: center; flex-direction: column; gap: 0px;}
+
+/* Panoramica */
+@import 'https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.css';
+
+html, body, #viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
 
 /* Mio */
 nav{
@@ -378,6 +450,8 @@ h1{text-align: center;}
 
 h2{text-align: center;}
 
+h3{text-align: center;}
+
 button.pantalla{color:#FAFAFA; background: #2126FE; border: none;}
 
 button.pantalla:hover{background-color: #8BA6F9; color:#1A1A1A;}
@@ -398,3 +472,11 @@ div.iframe{display: flex;
   justify-content: center;
   align-items: center;}
 
+details{text-align: center;}
+
+a.ubicacion{display: block;
+  text-align: center;}
+
+video, source{display: flex;
+  justify-content: center;
+  align-items: center;}
