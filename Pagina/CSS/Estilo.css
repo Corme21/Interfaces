@@ -385,7 +385,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 .btn.active {
-  background-color: #9cb5ff;
+  background-color: #B39EFF;
   color: #1A1A1A;
 }
 
@@ -480,3 +480,21 @@ a.ubicacion{display: block;
 video, source{display: flex;
   justify-content: center;
   align-items: center;}
+
+/* Animacion botones */
+
+input.enviar{background-color: #2126FE; color:#FAFAFA;}
+
+input.enviar:hover{animation-name: cambio; animation-duration: 4s;}
+
+@keyframes cambio {
+  from {background-color: #2126FE; color:#FAFAFA;}
+  to {background-color: #8BA6F9; color:#1A1A1A;}
+}
+
+/* Transicion imagenes tienda */
+
+img.rotar {transition: width 2s, height 2s, transform 2s;}
+
+img.rotar:hover {width: 500px; height: 500px; transform: rotate(360deg);}
+
